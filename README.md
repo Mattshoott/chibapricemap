@@ -1,2 +1,3 @@
 # chibapricemap
 muzukasii
+muzui
