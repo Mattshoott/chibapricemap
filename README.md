@@ -1,3 +1,4 @@
 # chibapricemap
 muzukasii
 muzui
+demoyaru
