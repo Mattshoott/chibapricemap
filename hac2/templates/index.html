@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>こども食堂登録フォーム</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <h1>こども食堂情報登録</h1>
+    
+    <div id = "map" style="height: 300px; width: 100%; margin-bottom: 20px;"></div>
+    <form method="POST" action="/">
+        
+        名称: <input type="text" name="name"><br><br>
+        施設名: <input type="text" name="place"><br><br>
+
+        <label>開催日:</label><br>
+
+        【週】
+        <label><input type="checkbox" name="week[]" value="第1">第1</label>
+        <label><input type="checkbox" name="week[]" value="第2">第2</label>
+        <label><input type="checkbox" name="week[]" value="第3">第3</label>
+        <label><input type="checkbox" name="week[]" value="第4">第4</label>
+        <br>
+
+        【曜日】
+        <label><input type="checkbox" name="day[]" value="月">月</label>
+        <label><input type="checkbox" name="day[]" value="火">火</label>
+        <label><input type="checkbox" name="day[]" value="水">水</label>
+        <label><input type="checkbox" name="day[]" value="木">木</label>
+        <label><input type="checkbox" name="day[]" value="金">金</label>
+        <label><input type="checkbox" name="day[]" value="土">土</label>
+        <label><input type="checkbox" name="day[]" value="日">日</label>
+        <br><br>
+
+
+        時間: <input type="text" name="time"><br><br>
+        参加費用: <input type="text" name="cost"><br><br>
+        担当者名: <input type="text" name = "tname"><br><br>
+        電話番号: <input type="text" name = "phone"><br><br>
+
+        <input type="hidden" name="lat" id="lat">
+        <input type="hidden" name="long" id="long">
+        
+        <input type="submit" value="登録">
+    </form>
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // 千葉市の中心付近を初期表示
+        var map = L.map('map').setView([35.6074, 140.1065], 12);
+
+        // OSMタイル
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        var marker;
+
+        // 地図クリックでピンを追加・更新
+        map.on('click', function(e) {
+            if (marker) {
+                map.removeLayer(marker);
+            }
+            marker = L.marker(e.latlng).addTo(map);
+
+            // 隠しフィールドに緯度経度を格納
+            document.getElementById("lat").value = e.latlng.lat.toFixed(6);
+            document.getElementById("long").value = e.latlng.lng.toFixed(6);
+        });
+    </script>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7115a6b1b8cc3d40f72a0c60db22b5ec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7115a6b1b8cc3d40f72a0c60db22b5ec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7115a6b1b8cc3d40f72a0c60db22b5ec = L.map(
+                "map_7115a6b1b8cc3d40f72a0c60db22b5ec",
+                {
+                    center: [35.6076, 140.1063],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": [
+[
+-90,
+-180,
+],
+[
+90,
+180,
+],
+],
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_449398b328c2a29c5f7f886457582602 = L.tileLayer(
+                "https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png",
+                {
+  "minZoom": 12,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u56fd\u571f\u5730\u7406\u9662",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_449398b328c2a29c5f7f886457582602.addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+            map_7115a6b1b8cc3d40f72a0c60db22b5ec.fitBounds(
+                [[35.5, 140.05], [35.7, 140.2]],
+                {}
+            );
+        
+    
+            var marker_711672eca89aea2b7ec2f18d35e50703 = L.marker(
+                [35.607412, 140.123204],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_df7786cbacbbab36e24af96532ff4e48 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_8050b708b608273b0432327423fe48cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b0684c4e2eefccc5c058d710fb5fff3 = $(`<div id="html_0b0684c4e2eefccc5c058d710fb5fff3" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>きぼーるこども食堂</b><br>                 施設名：きぼーる<br>                 開催日：毎月1回（曜日は未定）6月～9月は開催いたしません<br>                 時間：16:00～18:00<br>                 参加費用：18歳未満 100円大人 300円<br>                 電話番号：043-202-1504<br>                 その他：要事前申し込み             </div>             </div>`)[0];
+                popup_8050b708b608273b0432327423fe48cc.setContent(html_0b0684c4e2eefccc5c058d710fb5fff3);
+            
+        
+
+        marker_711672eca89aea2b7ec2f18d35e50703.bindPopup(popup_8050b708b608273b0432327423fe48cc)
+        ;
+
+        
+    
+    
+                marker_711672eca89aea2b7ec2f18d35e50703.setIcon(icon_df7786cbacbbab36e24af96532ff4e48);
+            
+    
+            var marker_42d91f05a73022cd6b99f7e07cc67973 = L.marker(
+                [35.582066, 140.135196],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_37d527c07039c8ad3704dda564d88b93 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_0456302dd3a18236acf9d368f253527a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7241d294c5797a4994984da6f4282b63 = $(`<div id="html_7241d294c5797a4994984da6f4282b63" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>こども食堂 やまちゃん</b><br>                 施設名：やまちゃん<br>                 開催日：夏休み限定（週1～2回）<br>                 時間：-<br>                 参加費用：小学生 200円中学生 300円<br>                 電話番号：090-9827-4870<br>                 その他：-             </div>             </div>`)[0];
+                popup_0456302dd3a18236acf9d368f253527a.setContent(html_7241d294c5797a4994984da6f4282b63);
+            
+        
+
+        marker_42d91f05a73022cd6b99f7e07cc67973.bindPopup(popup_0456302dd3a18236acf9d368f253527a)
+        ;
+
+        
+    
+    
+                marker_42d91f05a73022cd6b99f7e07cc67973.setIcon(icon_37d527c07039c8ad3704dda564d88b93);
+            
+    
+            var marker_1abcde71e5b78b257f3a7d6c62062a79 = L.marker(
+                [35.61585, 140.123211],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_b9f42f18faa0d7bac46ca74777253a05 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_1d58c6e26c554b1bb4b434984b4047a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cf3525b85ac4c523d0828a14236a070 = $(`<div id="html_2cf3525b85ac4c523d0828a14236a070" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>グレイステーブルこども食堂</b><br>                 施設名：グレイスリバーチャーチ<br>                 開催日：毎月1回土曜日学校の長期休暇期間は不定期開催<br>                 時間：11:30～14:30<br>                 参加費用：18歳以下無料大人 100円ボランティア無料<br>                 電話番号：070-6442-0222<br>                 その他：-             </div>             </div>`)[0];
+                popup_1d58c6e26c554b1bb4b434984b4047a2.setContent(html_2cf3525b85ac4c523d0828a14236a070);
+            
+        
+
+        marker_1abcde71e5b78b257f3a7d6c62062a79.bindPopup(popup_1d58c6e26c554b1bb4b434984b4047a2)
+        ;
+
+        
+    
+    
+                marker_1abcde71e5b78b257f3a7d6c62062a79.setIcon(icon_b9f42f18faa0d7bac46ca74777253a05);
+            
+    
+            var marker_f77a8e4670b35dcc315e154a9fe809a3 = L.marker(
+                [35.58758, 140.155995],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_041ac2c00a2272d7956b3268d9857e28 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_35fa67e136b0808c879ba2867a5aab28 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8845c78dac215bda76e6fcc12d7a6407 = $(`<div id="html_8845c78dac215bda76e6fcc12d7a6407" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>松ケ丘子ども食堂</b><br>                 施設名：松ケ丘町七区睦会自治会館(通称ひだまり）<br>                 開催日：年数回<br>                 時間：-<br>                 参加費用：-<br>                 電話番号：-<br>                 その他：-             </div>             </div>`)[0];
+                popup_35fa67e136b0808c879ba2867a5aab28.setContent(html_8845c78dac215bda76e6fcc12d7a6407);
+            
+        
+
+        marker_f77a8e4670b35dcc315e154a9fe809a3.bindPopup(popup_35fa67e136b0808c879ba2867a5aab28)
+        ;
+
+        
+    
+    
+                marker_f77a8e4670b35dcc315e154a9fe809a3.setIcon(icon_041ac2c00a2272d7956b3268d9857e28);
+            
+    
+            var marker_1bb6f54d0710a6de37465ed1e2fb94d1 = L.marker(
+                [35.616389, 140.132686],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_047b2cb61eaf25cbf88c66c5e12d1228 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_c2d0b042307ce3497207be2bf4969014 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e931395b4fb3c03b7d1f503d728565c = $(`<div id="html_3e931395b4fb3c03b7d1f503d728565c" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>こども食堂</b><br>                 施設名：焼肉商事<br>                 開催日：毎月第1火曜日<br>                 時間：16:00～18:00<br>                 参加費用：中学生までの子ども限定 10円<br>                 電話番号：043-235-2919<br>                 その他：-             </div>             </div>`)[0];
+                popup_c2d0b042307ce3497207be2bf4969014.setContent(html_3e931395b4fb3c03b7d1f503d728565c);
+            
+        
+
+        marker_1bb6f54d0710a6de37465ed1e2fb94d1.bindPopup(popup_c2d0b042307ce3497207be2bf4969014)
+        ;
+
+        
+    
+    
+                marker_1bb6f54d0710a6de37465ed1e2fb94d1.setIcon(icon_047b2cb61eaf25cbf88c66c5e12d1228);
+            
+    
+            var marker_e7364a178591968631f2af4866eedb52 = L.marker(
+                [35.62062, 140.123617],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_c7b55607e77744646b594d54dca2ccdf = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_05196d8fa36b9f8f0d61d2f7310e300d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3523e9c426ff3e11f75118271414b58 = $(`<div id="html_e3523e9c426ff3e11f75118271414b58" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>ラヴィーレ千葉椿森</b><br>                 施設名：ラヴィーレ千葉椿森<br>                 開催日：毎月第4土曜日<br>                 時間：10:30～13:00<br>                 参加費用：小学生以下 無料保護者 30０円<br>                 電話番号：043-254-6541<br>                 その他：開催日時はイベント内容によって変更の場合あり             </div>             </div>`)[0];
+                popup_05196d8fa36b9f8f0d61d2f7310e300d.setContent(html_e3523e9c426ff3e11f75118271414b58);
+            
+        
+
+        marker_e7364a178591968631f2af4866eedb52.bindPopup(popup_05196d8fa36b9f8f0d61d2f7310e300d)
+        ;
+
+        
+    
+    
+                marker_e7364a178591968631f2af4866eedb52.setIcon(icon_c7b55607e77744646b594d54dca2ccdf);
+            
+    
+            var marker_3204f16b152744e74e8137d341a0df0c = L.marker(
+                [35.619149, 140.106783],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_82566eb836882574728bc7856fb57c29 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_bb181c7c3a735f29bacd4c76cad0b773 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b72f424d061c447c41cc059fa947ce3a = $(`<div id="html_b72f424d061c447c41cc059fa947ce3a" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>松波フレンズこども食堂</b><br>                 施設名：NEW GRACE教会<br>                 開催日：第３土曜日<br>                 時間：17:00-19:00<br>                 参加費用：高校生以下 無料その他 200円<br>                 電話番号：090-9625-2877<br>                 その他：-             </div>             </div>`)[0];
+                popup_bb181c7c3a735f29bacd4c76cad0b773.setContent(html_b72f424d061c447c41cc059fa947ce3a);
+            
+        
+
+        marker_3204f16b152744e74e8137d341a0df0c.bindPopup(popup_bb181c7c3a735f29bacd4c76cad0b773)
+        ;
+
+        
+    
+    
+                marker_3204f16b152744e74e8137d341a0df0c.setIcon(icon_82566eb836882574728bc7856fb57c29);
+            
+    
+            var marker_bde40be0953feb301afd0e52847fd977 = L.marker(
+                [35.608129, 140.12323],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_d48898e423dd9741c92e07e05ebad4a3 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_dcc635e871555662cc5127be881e0265 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58f32b44fa947c4a20744ea05e31329e = $(`<div id="html_58f32b44fa947c4a20744ea05e31329e" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>幸福軒子ども食堂</b><br>                 施設名：九州とんこつラーメン幸福軒<br>                 開催日：毎月第３木曜日<br>                 時間：17:00-19:30<br>                 参加費用：15才まで 100円16才から 300円<br>                 電話番号：043-225-5029<br>                 その他：-             </div>             </div>`)[0];
+                popup_dcc635e871555662cc5127be881e0265.setContent(html_58f32b44fa947c4a20744ea05e31329e);
+            
+        
+
+        marker_bde40be0953feb301afd0e52847fd977.bindPopup(popup_dcc635e871555662cc5127be881e0265)
+        ;
+
+        
+    
+    
+                marker_bde40be0953feb301afd0e52847fd977.setIcon(icon_d48898e423dd9741c92e07e05ebad4a3);
+            
+    
+            var marker_c44617060198d3258f57867ddc577dd8 = L.marker(
+                [35.646476, 140.067644],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_43db57a2dcc7e6f225fb82c8eef72745 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_a4a964d1b0f365940599c91000479a9e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ed4d9041952a9d5312252974927ce52 = $(`<div id="html_4ed4d9041952a9d5312252974927ce52" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>おおなみこなみ「青空市」</b><br>                 施設名：おおなみこなみ<br>                 開催日：年３回程度<br>                 時間：-<br>                 参加費用：おにぎりセット（５０円）等の販売<br>                 電話番号：070-2157-1673<br>                 その他：-             </div>             </div>`)[0];
+                popup_a4a964d1b0f365940599c91000479a9e.setContent(html_4ed4d9041952a9d5312252974927ce52);
+            
+        
+
+        marker_c44617060198d3258f57867ddc577dd8.bindPopup(popup_a4a964d1b0f365940599c91000479a9e)
+        ;
+
+        
+    
+    
+                marker_c44617060198d3258f57867ddc577dd8.setIcon(icon_43db57a2dcc7e6f225fb82c8eef72745);
+            
+    
+            var marker_581575f094461c653353db1a938eebc2 = L.marker(
+                [35.651822, 140.087029],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_74418518912be994c338ed3e65f8a6b0 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_856e058c7b0c59f92b18678204ff01c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba06355b46a3010b71af3e9bbd8272e5 = $(`<div id="html_ba06355b46a3010b71af3e9bbd8272e5" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>西小中台子ども食堂</b><br>                 施設名：西小中台団地ショッピングセンター<br>                 開催日：毎月第4土曜日<br>                 時間：12:00～15:00<br>                 参加費用：18歳以下 無料大人 500円※<br>                 電話番号：080-3729-1631043-445-7377<br>                 その他：-             </div>             </div>`)[0];
+                popup_856e058c7b0c59f92b18678204ff01c6.setContent(html_ba06355b46a3010b71af3e9bbd8272e5);
+            
+        
+
+        marker_581575f094461c653353db1a938eebc2.bindPopup(popup_856e058c7b0c59f92b18678204ff01c6)
+        ;
+
+        
+    
+    
+                marker_581575f094461c653353db1a938eebc2.setIcon(icon_74418518912be994c338ed3e65f8a6b0);
+            
+    
+            var marker_eb45cc5e05b516b7bdfeb4d9d1bed3df = L.marker(
+                [35.662793, 140.068926],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_b8ab2e649120b5968def50d1cd68103b = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_f09134f195e18ccc9b4fb803c368670d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b17a347a38db6bc196304789dbc4f817 = $(`<div id="html_b17a347a38db6bc196304789dbc4f817" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>和らぎ子ども食堂</b><br>                 施設名：花見川区役所<br>                 開催日：毎月第2日曜日（休日開庁日）<br>                 時間：11:00～12:30<br>                 参加費用：子ども 200円大人 400円<br>                 電話番号：090-1041-3214<br>                 その他：-             </div>             </div>`)[0];
+                popup_f09134f195e18ccc9b4fb803c368670d.setContent(html_b17a347a38db6bc196304789dbc4f817);
+            
+        
+
+        marker_eb45cc5e05b516b7bdfeb4d9d1bed3df.bindPopup(popup_f09134f195e18ccc9b4fb803c368670d)
+        ;
+
+        
+    
+    
+                marker_eb45cc5e05b516b7bdfeb4d9d1bed3df.setIcon(icon_b8ab2e649120b5968def50d1cd68103b);
+            
+    
+            var marker_859bd4901f596b933280980dbc3c59c0 = L.marker(
+                [35.660072, 140.091498],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_88e7a93ae3b39a9441f66df5df8ec000 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_2aada634fbd49f0e706c946ea121a951 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73097cd116ebd395fe37bea6b40e2149 = $(`<div id="html_73097cd116ebd395fe37bea6b40e2149" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>はたまち食堂</b><br>                 施設名：畑町ガーデン<br>                 開催日：毎月第3金曜日<br>                 時間：17:30～19:00<br>                 参加費用：中学生以下 無料大人 300円<br>                 電話番号：043-350-1550<br>                 その他：-             </div>             </div>`)[0];
+                popup_2aada634fbd49f0e706c946ea121a951.setContent(html_73097cd116ebd395fe37bea6b40e2149);
+            
+        
+
+        marker_859bd4901f596b933280980dbc3c59c0.bindPopup(popup_2aada634fbd49f0e706c946ea121a951)
+        ;
+
+        
+    
+    
+                marker_859bd4901f596b933280980dbc3c59c0.setIcon(icon_88e7a93ae3b39a9441f66df5df8ec000);
+            
+    
+            var marker_7584cee5bd49dcbe4a9cd24d389dcea1 = L.marker(
+                [35.707591, 140.107269],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_85e321c99326177b61bae0a55c8304e2 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+  "iconSize": [40, 65],
+});
+        
+    
+        var popup_75dbdaefadc2c07ff0be642695646ce0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae376eafbaee9785639696ced14ed95b = $(`<div id="html_ae376eafbaee9785639696ced14ed95b" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>柏井こども食堂</b><br>                 施設名：-<br>                 開催日：第2木曜日夕方第4日曜日昼<br>                 時間：-<br>                 参加費用：小中学生無料大人300円<br>                 電話番号：080-3541-5927<br>                 その他：-             </div>             </div>`)[0];
+                popup_75dbdaefadc2c07ff0be642695646ce0.setContent(html_ae376eafbaee9785639696ced14ed95b);
+            
+        
+
+        marker_7584cee5bd49dcbe4a9cd24d389dcea1.bindPopup(popup_75dbdaefadc2c07ff0be642695646ce0)
+        ;
+
+        
+    
+    
+                marker_7584cee5bd49dcbe4a9cd24d389dcea1.setIcon(icon_85e321c99326177b61bae0a55c8304e2);
+            
+    
+            var marker_009a52491b1d7f35593b791a66f91d0e = L.marker(
+                [35.65902, 140.087903],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_62ced58b69604b9c3caecd4e3dcbd338 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_f7fc51eb2933c43fe3fbba81b7aa2b80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff2d3d148730dc73a0fbbcb7d4db2a4f = $(`<div id="html_ff2d3d148730dc73a0fbbcb7d4db2a4f" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>そんぽの家朝日ヶ丘</b><br>                 施設名：-<br>                 開催日：毎月第4土曜日<br>                 時間：10:30～12:00<br>                 参加費用：小学生以下 無料保護者 300円<br>                 電話番号：043-213-5000<br>                 その他：開催日時はイベント内容によって変更の場合あり             </div>             </div>`)[0];
+                popup_f7fc51eb2933c43fe3fbba81b7aa2b80.setContent(html_ff2d3d148730dc73a0fbbcb7d4db2a4f);
+            
+        
+
+        marker_009a52491b1d7f35593b791a66f91d0e.bindPopup(popup_f7fc51eb2933c43fe3fbba81b7aa2b80)
+        ;
+
+        
+    
+    
+                marker_009a52491b1d7f35593b791a66f91d0e.setIcon(icon_62ced58b69604b9c3caecd4e3dcbd338);
+            
+    
+            var marker_6e332c04de94b0fc7a7c403daaf347be = L.marker(
+                [35.671637, 140.111711],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_defc4c25ed253ebaa7183480347aa9d2 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_307528e754bb1bd535e0bfc75c1af89b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c074c8383cc6789a628d9433e9ae1ba5 = $(`<div id="html_c074c8383cc6789a628d9433e9ae1ba5" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>あったカフェ</b><br>                 施設名：サンタファーム<br>                 開催日：毎月第１土曜日<br>                 時間：11:00～13:00<br>                 参加費用：無農薬野菜の収穫体験希望者５００円<br>                 電話番号：090-6488-1192<br>                 その他：-             </div>             </div>`)[0];
+                popup_307528e754bb1bd535e0bfc75c1af89b.setContent(html_c074c8383cc6789a628d9433e9ae1ba5);
+            
+        
+
+        marker_6e332c04de94b0fc7a7c403daaf347be.bindPopup(popup_307528e754bb1bd535e0bfc75c1af89b)
+        ;
+
+        
+    
+    
+                marker_6e332c04de94b0fc7a7c403daaf347be.setIcon(icon_defc4c25ed253ebaa7183480347aa9d2);
+            
+    
+            var marker_e4b4289d93a9e0f2f35b1e741b074b18 = L.marker(
+                [35.654412, 140.069195],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_f40e626e476ccb619d6e3e2348045a92 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_d10b338e5e659470983b9072dccc94d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9b4f9558ffe777f7640be6655cf386a = $(`<div id="html_b9b4f9558ffe777f7640be6655cf386a" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>花園みんなのカフェTOMO</b><br>                 施設名：オープンルームTOMO<br>                 開催日：毎週火曜日毎月第1土曜日<br>                 時間：火曜日14:00~17:00土曜日11:00~14:00<br>                 参加費用：大人300円子ども100円（火曜日のおむすび無料）<br>                 電話番号：090-6485-6900<br>                 その他：-             </div>             </div>`)[0];
+                popup_d10b338e5e659470983b9072dccc94d2.setContent(html_b9b4f9558ffe777f7640be6655cf386a);
+            
+        
+
+        marker_e4b4289d93a9e0f2f35b1e741b074b18.bindPopup(popup_d10b338e5e659470983b9072dccc94d2)
+        ;
+
+        
+    
+    
+                marker_e4b4289d93a9e0f2f35b1e741b074b18.setIcon(icon_f40e626e476ccb619d6e3e2348045a92);
+            
+    
+            var marker_00b473eca0287612b57584340bbd6d12 = L.marker(
+                [35.667072, 140.079401],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_8e1d3efd16093c5e56d107e2a3815fc2 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_1a14ce59e67340ef8b4d404c36a99c1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d60d2c53d5cb79358c86bc56a833b127 = $(`<div id="html_d60d2c53d5cb79358c86bc56a833b127" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>畑町子ども食堂</b><br>                 施設名：畑コミュニティセンター<br>                 開催日：毎月第３日曜日<br>                 時間：12:00-13:00<br>                 参加費用：中学生以下 無料大人 弁当300円<br>                 電話番号：090-5537-2837<br>                 その他：-             </div>             </div>`)[0];
+                popup_1a14ce59e67340ef8b4d404c36a99c1e.setContent(html_d60d2c53d5cb79358c86bc56a833b127);
+            
+        
+
+        marker_00b473eca0287612b57584340bbd6d12.bindPopup(popup_1a14ce59e67340ef8b4d404c36a99c1e)
+        ;
+
+        
+    
+    
+                marker_00b473eca0287612b57584340bbd6d12.setIcon(icon_8e1d3efd16093c5e56d107e2a3815fc2);
+            
+    
+            var marker_942a5f5c8fd653b6adad8b6fa5faf98c = L.marker(
+                [35.68823, 140.095068],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_835d1f0b423d90bf1205f3226572293e = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+  "iconSize": [40, 65],
+});
+        
+    
+        var popup_03df2904e3c9a37c96254153b319c73b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ecb8711ffd81ef17fdbebbfe99d89fc = $(`<div id="html_3ecb8711ffd81ef17fdbebbfe99d89fc" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>花見川子ども食堂</b><br>                 施設名：レンタルスペースLDK＋<br>                 開催日：第４日曜日<br>                 時間：11：30-15：00<br>                 参加費用：学生・子ども 100円大人 200円（大人のみの参加はご遠慮頂いています）<br>                 電話番号：090-4188-3644<br>                 その他：-             </div>             </div>`)[0];
+                popup_03df2904e3c9a37c96254153b319c73b.setContent(html_3ecb8711ffd81ef17fdbebbfe99d89fc);
+            
+        
+
+        marker_942a5f5c8fd653b6adad8b6fa5faf98c.bindPopup(popup_03df2904e3c9a37c96254153b319c73b)
+        ;
+
+        
+    
+    
+                marker_942a5f5c8fd653b6adad8b6fa5faf98c.setIcon(icon_835d1f0b423d90bf1205f3226572293e);
+            
+    
+            var marker_aa592e8dc1f896ede3fedf517c004ad3 = L.marker(
+                [35.655268, 140.059497],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_51c917176145e4d32afc46da8f9a613d = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_22f37334fa917e8ebfb05538287ae747 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7268e4a12afff68c5a1e53acdf64297c = $(`<div id="html_7268e4a12afff68c5a1e53acdf64297c" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>すぽっと幕張こども食堂</b><br>                 施設名：すぽっと幕張<br>                 開催日：毎月第4土曜日<br>                 時間：11：00～14：00<br>                 参加費用：中学生まで無料高校生以上300円<br>                 電話番号：090-8080-3951<br>                 その他：-             </div>             </div>`)[0];
+                popup_22f37334fa917e8ebfb05538287ae747.setContent(html_7268e4a12afff68c5a1e53acdf64297c);
+            
+        
+
+        marker_aa592e8dc1f896ede3fedf517c004ad3.bindPopup(popup_22f37334fa917e8ebfb05538287ae747)
+        ;
+
+        
+    
+    
+                marker_aa592e8dc1f896ede3fedf517c004ad3.setIcon(icon_51c917176145e4d32afc46da8f9a613d);
+            
+    
+            var marker_728b54853ca93f37196cf87194792277 = L.marker(
+                [35.6578, 140.069676],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_63a294fdc941715334d79a833975b73a = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+  "iconSize": [40, 65],
+});
+        
+    
+        var popup_01ee4e128adb05562738b72863e769ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1bc665406ef9e54272389df373d55005 = $(`<div id="html_1bc665406ef9e54272389df373d55005" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>花園地区子ども食堂</b><br>                 施設名：花園公民館<br>                 開催日：毎月第４日曜日<br>                 時間：10:30～12:00<br>                 参加費用：小学生以下100円大人200円<br>                 電話番号：－<br>                 その他：-             </div>             </div>`)[0];
+                popup_01ee4e128adb05562738b72863e769ba.setContent(html_1bc665406ef9e54272389df373d55005);
+            
+        
+
+        marker_728b54853ca93f37196cf87194792277.bindPopup(popup_01ee4e128adb05562738b72863e769ba)
+        ;
+
+        
+    
+    
+                marker_728b54853ca93f37196cf87194792277.setIcon(icon_63a294fdc941715334d79a833975b73a);
+            
+    
+            var marker_8b20208766adbabe646ac610df486f45 = L.marker(
+                [35.656711, 140.048008],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_97136cc558c01f546ec9bb0662f325cd = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+  "iconSize": [40, 65],
+});
+        
+    
+        var popup_8849506259d88ead5cf59ec8e805e074 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4d8fd03f436e77a929434b744c4736c = $(`<div id="html_c4d8fd03f436e77a929434b744c4736c" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>まんてんこども食堂</b><br>                 施設名：幕張コミュニティセンター<br>                 開催日：毎月第４日曜日<br>                 時間：-<br>                 参加費用：こども無料保護者300円<br>                 電話番号：090-2641-0316<br>                 その他：-             </div>             </div>`)[0];
+                popup_8849506259d88ead5cf59ec8e805e074.setContent(html_c4d8fd03f436e77a929434b744c4736c);
+            
+        
+
+        marker_8b20208766adbabe646ac610df486f45.bindPopup(popup_8849506259d88ead5cf59ec8e805e074)
+        ;
+
+        
+    
+    
+                marker_8b20208766adbabe646ac610df486f45.setIcon(icon_97136cc558c01f546ec9bb0662f325cd);
+            
+    
+            var marker_ee98698f19c1d45577e3b208bc03206c = L.marker(
+                [35.638848, 140.089624],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_dea680ee841f211c3b7ba4286df25bc6 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_1a9ac852094eaa54d880d12bb0f5fa77 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6cd57c60e1b7000d41fe0620f60e30b2 = $(`<div id="html_6cd57c60e1b7000d41fe0620f60e30b2" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>まんてんこども食堂</b><br>                 施設名：アストロベースキャンプ保育園<br>                 開催日：偶数月第２日曜日<br>                 時間：-<br>                 参加費用：こども無料保護者300円<br>                 電話番号：090-2641-0316<br>                 その他：-             </div>             </div>`)[0];
+                popup_1a9ac852094eaa54d880d12bb0f5fa77.setContent(html_6cd57c60e1b7000d41fe0620f60e30b2);
+            
+        
+
+        marker_ee98698f19c1d45577e3b208bc03206c.bindPopup(popup_1a9ac852094eaa54d880d12bb0f5fa77)
+        ;
+
+        
+    
+    
+                marker_ee98698f19c1d45577e3b208bc03206c.setIcon(icon_dea680ee841f211c3b7ba4286df25bc6);
+            
+    
+            var marker_137955df44388ca31441115847e07c58 = L.marker(
+                [35.644256, 140.121417],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_abb0244ca6614e29ead43dc46b117886 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_d85e5a0d5cc83741676e49b7f99b38ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae40062308ea6542d6a8daa7c8ab6d2a = $(`<div id="html_ae40062308ea6542d6a8daa7c8ab6d2a" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>こひつじ食堂</b><br>                 施設名：稲毛こひつじ園<br>                 開催日：毎月第１金曜日<br>                 時間：16：30～18：30<br>                 参加費用：子ども 300円大人 500円<br>                 電話番号：043-207-5599<br>                 その他：-             </div>             </div>`)[0];
+                popup_d85e5a0d5cc83741676e49b7f99b38ac.setContent(html_ae40062308ea6542d6a8daa7c8ab6d2a);
+            
+        
+
+        marker_137955df44388ca31441115847e07c58.bindPopup(popup_d85e5a0d5cc83741676e49b7f99b38ac)
+        ;
+
+        
+    
+    
+                marker_137955df44388ca31441115847e07c58.setIcon(icon_abb0244ca6614e29ead43dc46b117886);
+            
+    
+            var marker_d8bdf8a6281e738d0d8f97556dbdab2e = L.marker(
+                [35.62633, 140.108372],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_421994c0789cbe3f14cbdcad86169cfb = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_bdee58d91f2d9637e0a29fe270759347 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c73ce4adf1c9e456bfcdc6c0c4d9670 = $(`<div id="html_1c73ce4adf1c9e456bfcdc6c0c4d9670" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>地域食堂 とどろき</b><br>                 施設名：自然食 じねん<br>                 開催日：毎月第4金曜日<br>                 時間：17：30～20：00<br>                 参加費用：中学生以下 無料※大人 500円<br>                 電話番号：043-306-2181(電話は平日12時-15時)<br>                 その他：-             </div>             </div>`)[0];
+                popup_bdee58d91f2d9637e0a29fe270759347.setContent(html_1c73ce4adf1c9e456bfcdc6c0c4d9670);
+            
+        
+
+        marker_d8bdf8a6281e738d0d8f97556dbdab2e.bindPopup(popup_bdee58d91f2d9637e0a29fe270759347)
+        ;
+
+        
+    
+    
+                marker_d8bdf8a6281e738d0d8f97556dbdab2e.setIcon(icon_421994c0789cbe3f14cbdcad86169cfb);
+            
+    
+            var marker_e65495238195dda2f6ddc53881124721 = L.marker(
+                [35.629678, 140.106937],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_2b32b2bc0f861888bf0b82eaa958343a = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_35b3e17485341ba3aaefaaf22f3e3db1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9febf2072e228c22b694dbf2ce92a1a0 = $(`<div id="html_9febf2072e228c22b694dbf2ce92a1a0" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>とどろき食堂／とどろきカフェ</b><br>                 施設名：千葉市営住宅轟町第一団地集会室<br>                 開催日：毎月土曜日<br>                 時間：・とどろき食堂12：00～13：00・とどろきカフェ10：00～14：00<br>                 参加費用：・とどろき食堂子ども 無料大人 500円・とどろきカフェ子ども 無料大人 300円<br>                 電話番号：090-8846-1572043-254-3296<br>                 その他：-             </div>             </div>`)[0];
+                popup_35b3e17485341ba3aaefaaf22f3e3db1.setContent(html_9febf2072e228c22b694dbf2ce92a1a0);
+            
+        
+
+        marker_e65495238195dda2f6ddc53881124721.bindPopup(popup_35b3e17485341ba3aaefaaf22f3e3db1)
+        ;
+
+        
+    
+    
+                marker_e65495238195dda2f6ddc53881124721.setIcon(icon_2b32b2bc0f861888bf0b82eaa958343a);
+            
+    
+            var marker_e941965915ca847397fc6eed6c593562 = L.marker(
+                [35.634641, 140.112608],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_ba4279a03ae9b697dc0e1ff0d2915b15 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_3fde447216e911e2a65089fba010ffdb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_023257d32caf1ef041d31582cc553bfb = $(`<div id="html_023257d32caf1ef041d31582cc553bfb" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>子ども食堂「ちーあい食堂」</b><br>                 施設名：千葉愛の教会「子どもの家」<br>                 開催日：毎月１回土曜日<br>                 時間：11:00～14:00<br>                 参加費用：無料<br>                 電話番号：043-386-4352<br>                 その他：-             </div>             </div>`)[0];
+                popup_3fde447216e911e2a65089fba010ffdb.setContent(html_023257d32caf1ef041d31582cc553bfb);
+            
+        
+
+        marker_e941965915ca847397fc6eed6c593562.bindPopup(popup_3fde447216e911e2a65089fba010ffdb)
+        ;
+
+        
+    
+    
+                marker_e941965915ca847397fc6eed6c593562.setIcon(icon_ba4279a03ae9b697dc0e1ff0d2915b15);
+            
+    
+            var marker_86c590380fa2d3f8c92ab91bba5a6c9e = L.marker(
+                [35.637675, 140.150146],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_b061c77cfbfd85f8717273aa4fceaf4e = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_9b2bd6b50c5ca0cb6e6548922ad6b902 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e6c2bd45b4b5dbb4151a34f45d06599 = $(`<div id="html_5e6c2bd45b4b5dbb4151a34f45d06599" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>TSUGA no わ こども食堂</b><br>                 施設名：TSUGA no わ<br>                 開催日：毎月第4金曜日<br>                 時間：15:00～19:00<br>                 参加費用：高校生以下 100円または地域通貨 300P大人 500円ボランティア 300円<br>                 電話番号：-<br>                 その他：-             </div>             </div>`)[0];
+                popup_9b2bd6b50c5ca0cb6e6548922ad6b902.setContent(html_5e6c2bd45b4b5dbb4151a34f45d06599);
+            
+        
+
+        marker_86c590380fa2d3f8c92ab91bba5a6c9e.bindPopup(popup_9b2bd6b50c5ca0cb6e6548922ad6b902)
+        ;
+
+        
+    
+    
+                marker_86c590380fa2d3f8c92ab91bba5a6c9e.setIcon(icon_b061c77cfbfd85f8717273aa4fceaf4e);
+            
+    
+            var marker_846d08bdeb30ab963bd3ed4541a8e76d = L.marker(
+                [35.61978, 140.191083],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_2cf5c6f6872a674993ff3209449239f1 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_e7a0c546fe2cdd6306a04aae4cc7ce10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1167856157831898cb3f7450fe9702f = $(`<div id="html_c1167856157831898cb3f7450fe9702f" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>こども食堂 縁</b><br>                 施設名：-<br>                 開催日：毎週火曜・木曜日<br>                 時間：17:00～19:00<br>                 参加費用：子ども 無料大人 お気持ち<br>                 電話番号：090-1816-1272<br>                 その他：-             </div>             </div>`)[0];
+                popup_e7a0c546fe2cdd6306a04aae4cc7ce10.setContent(html_c1167856157831898cb3f7450fe9702f);
+            
+        
+
+        marker_846d08bdeb30ab963bd3ed4541a8e76d.bindPopup(popup_e7a0c546fe2cdd6306a04aae4cc7ce10)
+        ;
+
+        
+    
+    
+                marker_846d08bdeb30ab963bd3ed4541a8e76d.setIcon(icon_2cf5c6f6872a674993ff3209449239f1);
+            
+    
+            var marker_3e19b1df403758d2baf07630fbc99628 = L.marker(
+                [35.635487, 140.168135],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_9a327d380a10f3cdb6fab67071e4fcee = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_89b35de813081615670892b54f4b6069 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d21d2f4bba573bc80000f8089cc78c3a = $(`<div id="html_d21d2f4bba573bc80000f8089cc78c3a" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>わかまつのWa</b><br>                 施設名：貴船神社境内若松南部自治会館<br>                 開催日：毎月第2・4土曜日<br>                 時間：10:00～14:00<br>                 参加費用：子ども 100円または地域通貨 300P大人 500円<br>                 電話番号：090-5509-1921<br>                 その他：-             </div>             </div>`)[0];
+                popup_89b35de813081615670892b54f4b6069.setContent(html_d21d2f4bba573bc80000f8089cc78c3a);
+            
+        
+
+        marker_3e19b1df403758d2baf07630fbc99628.bindPopup(popup_89b35de813081615670892b54f4b6069)
+        ;
+
+        
+    
+    
+                marker_3e19b1df403758d2baf07630fbc99628.setIcon(icon_9a327d380a10f3cdb6fab67071e4fcee);
+            
+    
+            var marker_036d04966ff484756a75be7cd577b859 = L.marker(
+                [35.634543, 140.153598],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_3cc14c57474693118f0b6537e7c22208 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_c8a37cd4d30b678711891a6c137dc864 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ddbd1c36c24628097982952759de338 = $(`<div id="html_2ddbd1c36c24628097982952759de338" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>千葉こども宅食プロジェクト</b><br>                 施設名：-<br>                 開催日：事務所オープン日毎週水曜日第２土曜日<br>                 時間：水曜日10:00～18:00土曜日10:00～16:00<br>                 参加費用：無料<br>                 電話番号：070-8410-5104<br>                 その他：対象地域：若葉区限定参加・詳しい詳細はこちら（外部リンク）（*https://lin.ee/ZOeVBtW<https://lin.ee/ZOeVBtW>*）             </div>             </div>`)[0];
+                popup_c8a37cd4d30b678711891a6c137dc864.setContent(html_2ddbd1c36c24628097982952759de338);
+            
+        
+
+        marker_036d04966ff484756a75be7cd577b859.bindPopup(popup_c8a37cd4d30b678711891a6c137dc864)
+        ;
+
+        
+    
+    
+                marker_036d04966ff484756a75be7cd577b859.setIcon(icon_3cc14c57474693118f0b6537e7c22208);
+            
+    
+            var marker_8bdcf5eb47eb0e70f6deb384edb5667a = L.marker(
+                [35.622777, 140.137969],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_e56515348ce223bfd82b97efe617d04e = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_13728fc1c87f6fe8a8deeb4e2a20ee29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7225c3013ec2f09c075e6acf8e6ff0d = $(`<div id="html_e7225c3013ec2f09c075e6acf8e6ff0d" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>子ども食堂「トミオのわ」</b><br>                 施設名：-<br>                 開催日：毎月最後の土曜日<br>                 時間：（お昼時）<br>                 参加費用：中学生まで無料（親御様500円）<br>                 電話番号：0120-382-663<br>                 その他：開催日時はイベント内容によって変更の場合あり             </div>             </div>`)[0];
+                popup_13728fc1c87f6fe8a8deeb4e2a20ee29.setContent(html_e7225c3013ec2f09c075e6acf8e6ff0d);
+            
+        
+
+        marker_8bdcf5eb47eb0e70f6deb384edb5667a.bindPopup(popup_13728fc1c87f6fe8a8deeb4e2a20ee29)
+        ;
+
+        
+    
+    
+                marker_8bdcf5eb47eb0e70f6deb384edb5667a.setIcon(icon_e56515348ce223bfd82b97efe617d04e);
+            
+    
+            var marker_ad7f03dc1a62768bc731e417ee6db860 = L.marker(
+                [35.638644, 140.133527],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_cddc06ea8d29649a38fd81edbe2aaff3 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_a378ffd15bb4546223baeb8686bfd3eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78da282bf5fccfa62151b29f75b263dc = $(`<div id="html_78da282bf5fccfa62151b29f75b263dc" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>ラヴィーレみつわ台</b><br>                 施設名：ラヴィーレみつわ台<br>                 開催日：毎月第2土曜日<br>                 時間：12:30～<br>                 参加費用：小学生以下 無料保護者 300円<br>                 電話番号：043-252-4165<br>                 その他：-             </div>             </div>`)[0];
+                popup_a378ffd15bb4546223baeb8686bfd3eb.setContent(html_78da282bf5fccfa62151b29f75b263dc);
+            
+        
+
+        marker_ad7f03dc1a62768bc731e417ee6db860.bindPopup(popup_a378ffd15bb4546223baeb8686bfd3eb)
+        ;
+
+        
+    
+    
+                marker_ad7f03dc1a62768bc731e417ee6db860.setIcon(icon_cddc06ea8d29649a38fd81edbe2aaff3);
+            
+    
+            var marker_0f080f1d1dd69aecc7b07037b8de8eb6 = L.marker(
+                [35.628773, 140.173887],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_0339f58d1225848dffc1ed391ca2c4df = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_160b8940d71dfede45d7f1566878fa53 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_174f713c3195a253defc4a7e635cbd2c = $(`<div id="html_174f713c3195a253defc4a7e635cbd2c" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>マルちゃん食堂</b><br>                 施設名：-<br>                 開催日：毎週月・水・金<br>                 時間：16:00～18:30<br>                 参加費用：18歳以下 無料大人 500円<br>                 電話番号：043-312-0092<br>                 その他：-             </div>             </div>`)[0];
+                popup_160b8940d71dfede45d7f1566878fa53.setContent(html_174f713c3195a253defc4a7e635cbd2c);
+            
+        
+
+        marker_0f080f1d1dd69aecc7b07037b8de8eb6.bindPopup(popup_160b8940d71dfede45d7f1566878fa53)
+        ;
+
+        
+    
+    
+                marker_0f080f1d1dd69aecc7b07037b8de8eb6.setIcon(icon_0339f58d1225848dffc1ed391ca2c4df);
+            
+    
+            var marker_b6873373e90a034a1335237ba008527d = L.marker(
+                [35.632485, 140.136575],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_2ad723baa04fb64aba47465abecd5120 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_ce9a3e72960b68ff0bdc2e9ceee2295f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e31319cdc68c8dd6c2c6d52d696be45 = $(`<div id="html_1e31319cdc68c8dd6c2c6d52d696be45" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>子ども食堂ひまわり</b><br>                 施設名：株式会社deerhouse<br>                 開催日：月に1回日曜日<br>                 時間：10：00～<br>                 参加費用：野菜や食品によって無料もしくは1つ100円<br>                 電話番号：090-1251-6272<br>                 その他：-             </div>             </div>`)[0];
+                popup_ce9a3e72960b68ff0bdc2e9ceee2295f.setContent(html_1e31319cdc68c8dd6c2c6d52d696be45);
+            
+        
+
+        marker_b6873373e90a034a1335237ba008527d.bindPopup(popup_ce9a3e72960b68ff0bdc2e9ceee2295f)
+        ;
+
+        
+    
+    
+                marker_b6873373e90a034a1335237ba008527d.setIcon(icon_2ad723baa04fb64aba47465abecd5120);
+            
+    
+            var marker_4adf2435e6955d0c3773ff3b5632920b = L.marker(
+                [35.544173, 140.206042],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_5e8fecfa30adb7529d7a197581e6a336 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_9357563a4cb78266834f6ea9af018d09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5cdd1ab99eb6ec6c4510a9270f7bd42 = $(`<div id="html_f5cdd1ab99eb6ec6c4510a9270f7bd42" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>かがやきっ子食堂</b><br>                 施設名：おゆみ野キリスト教会誉田チャペル1F<br>                 開催日：毎月第3水曜日<br>                 時間：17:30～19:00<br>                 参加費用：一律150円<br>                 電話番号：080-7471-7674<br>                 その他：-             </div>             </div>`)[0];
+                popup_9357563a4cb78266834f6ea9af018d09.setContent(html_f5cdd1ab99eb6ec6c4510a9270f7bd42);
+            
+        
+
+        marker_4adf2435e6955d0c3773ff3b5632920b.bindPopup(popup_9357563a4cb78266834f6ea9af018d09)
+        ;
+
+        
+    
+    
+                marker_4adf2435e6955d0c3773ff3b5632920b.setIcon(icon_5e8fecfa30adb7529d7a197581e6a336);
+            
+    
+            var marker_0bb4e9a26f47b142a3d25ca309c33ee5 = L.marker(
+                [35.521261, 140.26542],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_3846839295b7e48cebebefde25e85ca4 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_f7691487f9b5d5e9d86f41d1b73c914b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2fcedf4eee2bde07a0673c1dec220d1e = $(`<div id="html_2fcedf4eee2bde07a0673c1dec220d1e" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>あすみこども食堂</b><br>                 施設名：土気あすみが丘プラザ<br>                 開催日：毎月第2金曜日<br>                 時間：17：00～19:00<br>                 参加費用：子ども 100円大人 300円<br>                 電話番号：043-294-1895<br>                 その他：-             </div>             </div>`)[0];
+                popup_f7691487f9b5d5e9d86f41d1b73c914b.setContent(html_2fcedf4eee2bde07a0673c1dec220d1e);
+            
+        
+
+        marker_0bb4e9a26f47b142a3d25ca309c33ee5.bindPopup(popup_f7691487f9b5d5e9d86f41d1b73c914b)
+        ;
+
+        
+    
+    
+                marker_0bb4e9a26f47b142a3d25ca309c33ee5.setIcon(icon_3846839295b7e48cebebefde25e85ca4);
+            
+    
+            var marker_bb7d35960ac6af57ca4018d494d77a11 = L.marker(
+                [35.560012, 140.175759],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_d5260dd62ad1348ea04729468d87382d = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_9b4f16c6a0e6bcbab5fb5de86855b434 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7312999de06b966428369d59f844c60 = $(`<div id="html_f7312999de06b966428369d59f844c60" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>まんぷく食堂</b><br>                 施設名：鎌取コミュニティセンター<br>                 開催日：毎月第2土曜日<br>                 時間：11:00～<br>                 参加費用：子ども 1～100円※大人（子ども同伴） 350円大人 500円<br>                 電話番号：080-1091-9830<br>                 その他：-             </div>             </div>`)[0];
+                popup_9b4f16c6a0e6bcbab5fb5de86855b434.setContent(html_f7312999de06b966428369d59f844c60);
+            
+        
+
+        marker_bb7d35960ac6af57ca4018d494d77a11.bindPopup(popup_9b4f16c6a0e6bcbab5fb5de86855b434)
+        ;
+
+        
+    
+    
+                marker_bb7d35960ac6af57ca4018d494d77a11.setIcon(icon_d5260dd62ad1348ea04729468d87382d);
+            
+    
+            var marker_aaa40d7132d3d7c594ba6d4b0c71cf87 = L.marker(
+                [35.553481, 140.188318],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_70487d287b113c4d299ef83d0475d082 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_6f99cc9d706d3ba97a9ac9aa7fe667d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_143fc18620e88eab3ca07d364071d068 = $(`<div id="html_143fc18620e88eab3ca07d364071d068" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>たんぽぽ</b><br>                 施設名：市営おゆみ野第1団地集会所<br>                 開催日：毎月第3土曜日<br>                 時間：12:00～14:00<br>                 参加費用：子ども 100円親 100円高齢者 200円<br>                 電話番号：090-1507-6679<br>                 その他：-             </div>             </div>`)[0];
+                popup_6f99cc9d706d3ba97a9ac9aa7fe667d5.setContent(html_143fc18620e88eab3ca07d364071d068);
+            
+        
+
+        marker_aaa40d7132d3d7c594ba6d4b0c71cf87.bindPopup(popup_6f99cc9d706d3ba97a9ac9aa7fe667d5)
+        ;
+
+        
+    
+    
+                marker_aaa40d7132d3d7c594ba6d4b0c71cf87.setIcon(icon_70487d287b113c4d299ef83d0475d082);
+            
+    
+            var marker_ae1516b8723f1c581624f3721fe3bf0d = L.marker(
+                [35.549889, 140.203241],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_b0a428ae869988a844860e4046032b89 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_3af99ccca2a6b9ec0140930cbc4ebea8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84ac0d260319ac425fdfa03ea3d94dc4 = $(`<div id="html_84ac0d260319ac425fdfa03ea3d94dc4" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>ピッピこども食堂</b><br>                 施設名：誉田公民館<br>                 開催日：毎月第3金曜日<br>                 時間：15：00～18：00<br>                 参加費用：どなたでも100円<br>                 電話番号：090-2334-1898<br>                 その他：-             </div>             </div>`)[0];
+                popup_3af99ccca2a6b9ec0140930cbc4ebea8.setContent(html_84ac0d260319ac425fdfa03ea3d94dc4);
+            
+        
+
+        marker_ae1516b8723f1c581624f3721fe3bf0d.bindPopup(popup_3af99ccca2a6b9ec0140930cbc4ebea8)
+        ;
+
+        
+    
+    
+                marker_ae1516b8723f1c581624f3721fe3bf0d.setIcon(icon_b0a428ae869988a844860e4046032b89);
+            
+    
+            var marker_91f01fc54bf51bc112429026f304fb91 = L.marker(
+                [35.558732, 140.177421],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_5cc71c470a2827a4192f3026027aac61 = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_2190aac2a38d574d7c15dbc116a9d17a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df35fd4087cd3b9a990c0c6798786080 = $(`<div id="html_df35fd4087cd3b9a990c0c6798786080" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>いちご食堂</b><br>                 施設名：大多喜ガスショールームBeE（ビー）<br>                 開催日：毎月第２日曜日<br>                 時間：11:30～13:00※変更の可能性あり<br>                 参加費用：子ども（小学生以下）100円大人300円<br>                 電話番号：080-4955-0640<br>                 その他：公式LINEアカウントID 362dsqub             </div>             </div>`)[0];
+                popup_2190aac2a38d574d7c15dbc116a9d17a.setContent(html_df35fd4087cd3b9a990c0c6798786080);
+            
+        
+
+        marker_91f01fc54bf51bc112429026f304fb91.bindPopup(popup_2190aac2a38d574d7c15dbc116a9d17a)
+        ;
+
+        
+    
+    
+                marker_91f01fc54bf51bc112429026f304fb91.setIcon(icon_5cc71c470a2827a4192f3026027aac61);
+            
+    
+            var marker_809cfe9d5043a0cea8da929902feffd5 = L.marker(
+                [35.521261, 140.26542],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_2aa37ab09aa26940a1c7590d14013dbe = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_0c28d60b039a43b8fdaac86bdf313181 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d9c5bcc4a5bea9aa8e1f5a4d54d2f1c = $(`<div id="html_2d9c5bcc4a5bea9aa8e1f5a4d54d2f1c" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>もぐもぐすぺーすLink</b><br>                 施設名：あすみが丘プラザ<br>                 開催日：月1～2回火曜日<br>                 時間：16：00～20：00<br>                 参加費用：無料小学生以上大学生まで<br>                 電話番号：-<br>                 その他：-             </div>             </div>`)[0];
+                popup_0c28d60b039a43b8fdaac86bdf313181.setContent(html_2d9c5bcc4a5bea9aa8e1f5a4d54d2f1c);
+            
+        
+
+        marker_809cfe9d5043a0cea8da929902feffd5.bindPopup(popup_0c28d60b039a43b8fdaac86bdf313181)
+        ;
+
+        
+    
+    
+                marker_809cfe9d5043a0cea8da929902feffd5.setIcon(icon_2aa37ab09aa26940a1c7590d14013dbe);
+            
+    
+            var marker_7107e0cb1cd6ea699fec8b51cdf624cb = L.marker(
+                [35.647506, 140.062609],
+                {
+}
+            ).addTo(map_7115a6b1b8cc3d40f72a0c60db22b5ec);
+        
+    
+        var icon_bfd188f8beb269bca9920a55a236881c = L.icon({
+  "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+  "iconSize": [25, 41],
+});
+        
+    
+        var popup_78cc43f15bdeb6c1356f644df442ec2a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e4bf837e9bb1e611bc5a03e7dfe28dc = $(`<div id="html_0e4bf837e9bb1e611bc5a03e7dfe28dc" style="width: 100.0%; height: 100.0%;">             <div style="white-space:nowrap;">                 <b>地域食堂まさご</b><br>                 施設名：生活クラブ虹の街デポー真砂<br>                 開催日：毎月第1土曜日<br>                 時間：11:30～12:30<br>                 参加費用：子ども 100円大人 300円<br>                 電話番号：043-278-7629<br>                 その他：-             </div>             </div>`)[0];
+                popup_78cc43f15bdeb6c1356f644df442ec2a.setContent(html_0e4bf837e9bb1e611bc5a03e7dfe28dc);
+            
+        
+
+        marker_7107e0cb1cd6ea699fec8b51cdf624cb.bindPopup(popup_78cc43f15bdeb6c1356f644df442ec2a)
+        ;
+
+        
+    
+    
+                marker_7107e0cb1cd6ea699fec8b51cdf624cb.setIcon(icon_bfd188f8beb269bca9920a55a236881c);
+            
+</script>
+</html>
