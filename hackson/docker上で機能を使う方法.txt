@@ -1,0 +1,20 @@
+＞＞機能の使い方
+
+登録フォームを起動したいとき
+docker run -p 8000:8000 --name kodomoshokudomap deathstranding/shokudomap:1.0
+→http://localhost:8000にアクセス
+
+	地図を表示したいとき
+	docker start 
+	docker exec -it kodomoshokudomap python main.py 2025-09-11
+
+	
+	コンテナから生成された地図を取り出す
+	docker cp registerform:/app/chiba_map.html .
+
+
+変更フォームにアクセスしたいとき
+docker run -p 8000:8000 --name Re-registerform deathstranding/shokudomap:1.0 gunicorn --bind 0.0.0.0:8000 reform:app
+→http://localhost:8000にアクセス
+
+
